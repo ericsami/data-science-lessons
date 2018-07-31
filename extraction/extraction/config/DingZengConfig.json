@@ -1,0 +1,34 @@
+{
+    "table_dict": {
+      "fields": [
+        {
+          "fieldName": "ZengFaDuiXiang",
+          "convertMethod": "getStringFromText",
+          "pattern": "发行对象|投资者",
+          "colSkipPattern": "受让人",
+          "rowSkipPattern": "合计|小计|总计|共计"
+        },
+        {
+          "fieldName": "ShuLiang",
+          "convertMethod": "getLongFromText",
+          "pattern": "认购股数"
+        },
+        {
+          "fieldName": "JinE",
+          "convertMethod": "getDecimalRangeFromTableText",
+          "pattern": "认购金额"
+        },
+        {
+          "fieldName": "ShuoDingQi",
+          "convertMethod": "getLongFromText",
+          "pattern": "起.*[月]"
+        },
+        {
+          "fieldName": "RenGouFangShi",
+          "convertMethod": "getStringFromText",
+          "pattern": "以.*参与"
+        }
+      ]
+    }
+  }
+  
